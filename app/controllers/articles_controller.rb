@@ -19,6 +19,10 @@ class ArticlesController < ApplicationController
       flash.now[:error] = '保存に失敗しました'
       render :new, status: :unprocessable_entity
     end
+
+    def edit
+      @article = Article.find(params[:id])
+    end
   end
 
   private
