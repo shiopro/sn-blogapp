@@ -59,6 +59,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'erb2haml'
 end
 
 group :test do
@@ -68,6 +69,12 @@ group :test do
 end
 
 gem "dartsass-rails", "~> 0.5.0"
+
 gem "importmap-rails"
+
 gem "turbo-rails"
+
 gem "stimulus-rails"
+
+gem 'haml-rails'
+
