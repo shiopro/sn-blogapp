@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ArticlesController < ApplicationController
-  before_action :set_article, only: %i[show edit update]
+  before_action :set_article, only: %i[show]
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   def index
